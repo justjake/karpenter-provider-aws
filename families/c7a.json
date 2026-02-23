@@ -1,5 +1,15 @@
 {
   "Family": "c7a",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "c",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3700",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "c7a",
+    "karpenter.k8s.aws/instance-generation": "7",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "c7a.medium",

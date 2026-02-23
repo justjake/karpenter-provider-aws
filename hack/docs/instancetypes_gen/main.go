@@ -20,6 +20,7 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"maps"
 	"os"
 	"sort"
 	"strings"
@@ -83,6 +84,7 @@ func (f *FakeFieldIndexer) IndexField(_ context.Context, _ client.Object, _ stri
 
 type FamilyInfo struct {
 	Family        string
+	CommonLabels  map[string]any
 	InstanceTypes []*InstanceType
 }
 
@@ -235,6 +237,7 @@ below are the resources available with some assumptions and after the instance o
 		fam := FamilyInfo{
 			Family:        familyName,
 			InstanceTypes: make([]*InstanceType, 0, 5),
+			CommonLabels:  nil,
 		}
 
 		instanceTypes := lo.MapToSlice(families[familyName], func(_ string, it *cloudprovider.InstanceType) *cloudprovider.InstanceType { return it })
@@ -299,6 +302,15 @@ below are the resources available with some assumptions and after the instance o
 				}
 				fmt.Fprintf(f, " |%s|%s|\n", resourceName, quantity.String())
 				inst.Resources[resourceName] = quantity.String()
+			}
+
+			if fam.CommonLabels == nil {
+				fam.CommonLabels = maps.Clone(inst.Labels)
+			} else {
+				maps.DeleteFunc(fam.CommonLabels, func(key string, value any) bool {
+					instValue, ok := inst.Labels[key]
+					return !ok || instValue != value
+				})
 			}
 		}
 

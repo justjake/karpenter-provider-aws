@@ -1,5 +1,15 @@
 {
   "Family": "m8a",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "m",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "4500",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "m8a",
+    "karpenter.k8s.aws/instance-generation": "8",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "m8a.medium",

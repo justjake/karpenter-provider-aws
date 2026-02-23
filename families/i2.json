@@ -1,5 +1,16 @@
 {
   "Family": "i2",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "i",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2500",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "false",
+    "karpenter.k8s.aws/instance-family": "i2",
+    "karpenter.k8s.aws/instance-generation": "2",
+    "karpenter.k8s.aws/instance-hypervisor": "xen",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "i2.xlarge",

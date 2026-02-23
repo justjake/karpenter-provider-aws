@@ -1,5 +1,19 @@
 {
   "Family": "g4ad",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "g",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3000",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "g4ad",
+    "karpenter.k8s.aws/instance-generation": "4",
+    "karpenter.k8s.aws/instance-gpu-manufacturer": "amd",
+    "karpenter.k8s.aws/instance-gpu-memory": "8192",
+    "karpenter.k8s.aws/instance-gpu-name": "radeon-pro-v520",
+    "karpenter.k8s.aws/instance-hypervisor": "nitro",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "g4ad.xlarge",

@@ -1,5 +1,15 @@
 {
   "Family": "r5",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "r",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3100",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "false",
+    "karpenter.k8s.aws/instance-family": "r5",
+    "karpenter.k8s.aws/instance-generation": "5",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "r5.large",

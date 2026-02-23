@@ -1,5 +1,19 @@
 {
   "Family": "u-6tb1",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "u",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2100",
+    "karpenter.k8s.aws/instance-ebs-bandwidth": "38000",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "u-6tb1",
+    "karpenter.k8s.aws/instance-generation": "1",
+    "karpenter.k8s.aws/instance-hypervisor": "nitro",
+    "karpenter.k8s.aws/instance-memory": "6291456",
+    "karpenter.k8s.aws/instance-network-bandwidth": "100000",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "u-6tb1.56xlarge",

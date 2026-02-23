@@ -1,5 +1,16 @@
 {
   "Family": "d3en",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "d",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3100",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "d3en",
+    "karpenter.k8s.aws/instance-generation": "3",
+    "karpenter.k8s.aws/instance-hypervisor": "nitro",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "d3en.xlarge",

@@ -1,5 +1,15 @@
 {
   "Family": "i8g",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "i",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "aws",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2800",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "i8g",
+    "karpenter.k8s.aws/instance-generation": "8",
+    "kubernetes.io/arch": "arm64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "i8g.large",

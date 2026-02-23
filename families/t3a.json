@@ -1,5 +1,16 @@
 {
   "Family": "t3a",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "t",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2200",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "false",
+    "karpenter.k8s.aws/instance-family": "t3a",
+    "karpenter.k8s.aws/instance-generation": "3",
+    "karpenter.k8s.aws/instance-hypervisor": "nitro",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "t3a.nano",

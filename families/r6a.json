@@ -1,5 +1,15 @@
 {
   "Family": "r6a",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "r",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3600",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "r6a",
+    "karpenter.k8s.aws/instance-generation": "6",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "r6a.large",

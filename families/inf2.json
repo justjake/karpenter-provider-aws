@@ -1,5 +1,18 @@
 {
   "Family": "inf2",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-accelerator-manufacturer": "aws",
+    "karpenter.k8s.aws/instance-accelerator-name": "inferentia2",
+    "karpenter.k8s.aws/instance-category": "inf",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3600",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "inf2",
+    "karpenter.k8s.aws/instance-generation": "2",
+    "karpenter.k8s.aws/instance-hypervisor": "nitro",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "inf2.xlarge",

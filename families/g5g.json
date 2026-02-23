@@ -1,5 +1,18 @@
 {
   "Family": "g5g",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "g",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "aws",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2500",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "false",
+    "karpenter.k8s.aws/instance-family": "g5g",
+    "karpenter.k8s.aws/instance-generation": "5",
+    "karpenter.k8s.aws/instance-gpu-manufacturer": "nvidia",
+    "karpenter.k8s.aws/instance-gpu-memory": "16384",
+    "karpenter.k8s.aws/instance-gpu-name": "t4g",
+    "kubernetes.io/arch": "arm64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "g5g.xlarge",

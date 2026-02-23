@@ -1,5 +1,16 @@
 {
   "Family": "r5a",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "r",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2500",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "false",
+    "karpenter.k8s.aws/instance-family": "r5a",
+    "karpenter.k8s.aws/instance-generation": "5",
+    "karpenter.k8s.aws/instance-hypervisor": "nitro",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "r5a.large",

@@ -1,5 +1,15 @@
 {
   "Family": "c6id",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "c",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3500",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "c6id",
+    "karpenter.k8s.aws/instance-generation": "6",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "c6id.large",

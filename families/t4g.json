@@ -1,5 +1,16 @@
 {
   "Family": "t4g",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "t",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "aws",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2500",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "false",
+    "karpenter.k8s.aws/instance-family": "t4g",
+    "karpenter.k8s.aws/instance-generation": "4",
+    "karpenter.k8s.aws/instance-hypervisor": "nitro",
+    "kubernetes.io/arch": "arm64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "t4g.nano",

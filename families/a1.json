@@ -1,5 +1,16 @@
 {
   "Family": "a1",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "a",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "aws",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2300",
+    "karpenter.k8s.aws/instance-ebs-bandwidth": "3500",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "false",
+    "karpenter.k8s.aws/instance-family": "a1",
+    "karpenter.k8s.aws/instance-generation": "1",
+    "kubernetes.io/arch": "arm64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "a1.medium",

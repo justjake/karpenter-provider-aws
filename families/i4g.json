@@ -1,5 +1,16 @@
 {
   "Family": "i4g",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "i",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "aws",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2500",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+    "karpenter.k8s.aws/instance-family": "i4g",
+    "karpenter.k8s.aws/instance-generation": "4",
+    "karpenter.k8s.aws/instance-hypervisor": "nitro",
+    "kubernetes.io/arch": "arm64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "i4g.large",

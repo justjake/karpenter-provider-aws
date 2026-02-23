@@ -1,5 +1,16 @@
 {
   "Family": "h1",
+  "CommonLabels": {
+    "karpenter.k8s.aws/instance-category": "h",
+    "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+    "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "2300",
+    "karpenter.k8s.aws/instance-encryption-in-transit-supported": "false",
+    "karpenter.k8s.aws/instance-family": "h1",
+    "karpenter.k8s.aws/instance-generation": "1",
+    "karpenter.k8s.aws/instance-hypervisor": "xen",
+    "kubernetes.io/arch": "amd64",
+    "kubernetes.io/os": "linux"
+  },
   "InstanceTypes": [
     {
       "Name": "h1.2xlarge",
