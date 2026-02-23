@@ -18,7 +18,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m3.medium"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "940m",
+        "ephemeral-storage": "17Gi",
+        "memory": "3276Mi",
+        "pods": "12"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "60m",
@@ -42,7 +47,12 @@
         "memory": "3763Mi",
         "pods": "12"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "940m",
+        "ephemeral-storage": "17Gi",
+        "memory": "3276Mi",
+        "pods": "12"
+      }
     },
     {
       "Name": "m3.large",
@@ -61,7 +71,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m3.large"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "6852Mi",
+        "pods": "29"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "70m",
@@ -85,7 +100,12 @@
         "memory": "7526Mi",
         "pods": "29"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "6852Mi",
+        "pods": "29"
+      }
     },
     {
       "Name": "m3.xlarge",
@@ -104,7 +124,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m3.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "14059Mi",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -128,7 +153,12 @@
         "memory": "15052Mi",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "14059Mi",
+        "pods": "58"
+      }
     },
     {
       "Name": "m3.2xlarge",
@@ -147,7 +177,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m3.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "28452Mi",
+        "pods": "118"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -171,7 +206,12 @@
         "memory": "30105Mi",
         "pods": "118"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "28452Mi",
+        "pods": "118"
+      }
     }
   ]
 }

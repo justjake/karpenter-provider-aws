@@ -23,7 +23,15 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "inf2.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "aws.amazon.com/neuron": "1",
+        "aws.amazon.com/neuroncore": "2",
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15063Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "18"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -50,7 +58,15 @@
         "pods": "58",
         "vpc.amazonaws.com/pod-eni": "18"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "aws.amazon.com/neuron": "1",
+        "aws.amazon.com/neuroncore": "2",
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15063Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "18"
+      }
     },
     {
       "Name": "inf2.8xlarge",
@@ -74,7 +90,15 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "inf2.8xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "aws.amazon.com/neuron": "1",
+        "aws.amazon.com/neuroncore": "2",
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "125521Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "84"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "150m",
@@ -101,7 +125,15 @@
         "pods": "234",
         "vpc.amazonaws.com/pod-eni": "84"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "aws.amazon.com/neuron": "1",
+        "aws.amazon.com/neuroncore": "2",
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "125521Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "84"
+      }
     },
     {
       "Name": "inf2.24xlarge",
@@ -125,7 +157,15 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "inf2.24xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "aws.amazon.com/neuron": "6",
+        "aws.amazon.com/neuroncore": "12",
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "376889Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "310m",
@@ -152,7 +192,15 @@
         "pods": "737",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "aws.amazon.com/neuron": "6",
+        "aws.amazon.com/neuroncore": "12",
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "376889Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     },
     {
       "Name": "inf2.48xlarge",
@@ -176,7 +224,15 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "inf2.48xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "aws.amazon.com/neuron": "12",
+        "aws.amazon.com/neuroncore": "24",
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "762241Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "550m",
@@ -203,7 +259,15 @@
         "pods": "737",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "aws.amazon.com/neuron": "12",
+        "aws.amazon.com/neuroncore": "24",
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "762241Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     }
   ]
 }

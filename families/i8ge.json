@@ -20,7 +20,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.large"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15319Mi",
+        "pods": "29"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "70m",
@@ -44,7 +49,12 @@
         "memory": "15993Mi",
         "pods": "29"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15319Mi",
+        "pods": "29"
+      }
     },
     {
       "Name": "i8ge.xlarge",
@@ -65,7 +75,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31056Mi",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -89,7 +104,12 @@
         "memory": "32049Mi",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31056Mi",
+        "pods": "58"
+      }
     },
     {
       "Name": "i8ge.2xlarge",
@@ -110,7 +130,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "63169Mi",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -134,7 +159,12 @@
         "memory": "64162Mi",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "63169Mi",
+        "pods": "58"
+      }
     },
     {
       "Name": "i8ge.3xlarge",
@@ -155,7 +185,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.3xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "11900m",
+        "ephemeral-storage": "17Gi",
+        "memory": "93984Mi",
+        "pods": "176"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "100m",
@@ -179,7 +214,12 @@
         "memory": "96275Mi",
         "pods": "176"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "11900m",
+        "ephemeral-storage": "17Gi",
+        "memory": "93984Mi",
+        "pods": "176"
+      }
     },
     {
       "Name": "i8ge.6xlarge",
@@ -200,7 +240,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.6xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "23870m",
+        "ephemeral-storage": "17Gi",
+        "memory": "189046Mi",
+        "pods": "292"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "130m",
@@ -224,7 +269,12 @@
         "memory": "192613Mi",
         "pods": "292"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "23870m",
+        "ephemeral-storage": "17Gi",
+        "memory": "189046Mi",
+        "pods": "292"
+      }
     },
     {
       "Name": "i8ge.12xlarge",
@@ -245,7 +295,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.12xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "381083Mi",
+        "pods": "350"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "190m",
@@ -269,7 +324,12 @@
         "memory": "385288Mi",
         "pods": "350"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "381083Mi",
+        "pods": "350"
+      }
     },
     {
       "Name": "i8ge.18xlarge",
@@ -290,7 +350,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.18xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "71750m",
+        "ephemeral-storage": "17Gi",
+        "memory": "568963Mi",
+        "pods": "786"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "250m",
@@ -314,7 +379,12 @@
         "memory": "577964Mi",
         "pods": "786"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "71750m",
+        "ephemeral-storage": "17Gi",
+        "memory": "568963Mi",
+        "pods": "786"
+      }
     },
     {
       "Name": "i8ge.24xlarge",
@@ -335,7 +405,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.24xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "761639Mi",
+        "pods": "786"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "310m",
@@ -359,7 +434,12 @@
         "memory": "770640Mi",
         "pods": "786"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "761639Mi",
+        "pods": "786"
+      }
     },
     {
       "Name": "i8ge.metal-24xl",
@@ -380,7 +460,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.metal-24xl"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "761639Mi",
+        "pods": "786"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "310m",
@@ -404,7 +489,12 @@
         "memory": "770640Mi",
         "pods": "786"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "761639Mi",
+        "pods": "786"
+      }
     },
     {
       "Name": "i8ge.48xlarge",
@@ -425,7 +515,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.48xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "1528031Mi",
+        "pods": "1178",
+        "vpc.amazonaws.com/efa": "1"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "550m",
@@ -450,7 +546,13 @@
         "pods": "1178",
         "vpc.amazonaws.com/efa": "1"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "1528031Mi",
+        "pods": "1178",
+        "vpc.amazonaws.com/efa": "1"
+      }
     },
     {
       "Name": "i8ge.metal-48xl",
@@ -471,7 +573,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i8ge.metal-48xl"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "1528031Mi",
+        "pods": "1178",
+        "vpc.amazonaws.com/efa": "1"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "550m",
@@ -496,7 +604,13 @@
         "pods": "1178",
         "vpc.amazonaws.com/efa": "1"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "1528031Mi",
+        "pods": "1178",
+        "vpc.amazonaws.com/efa": "1"
+      }
     }
   ]
 }

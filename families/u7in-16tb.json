@@ -20,7 +20,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "u7in-16tb.224xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "893690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "16436982Mi",
+        "pods": "394",
+        "vpc.amazonaws.com/efa": "2",
+        "vpc.amazonaws.com/pod-eni": "106"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "2310m",
@@ -46,7 +53,14 @@
         "vpc.amazonaws.com/efa": "2",
         "vpc.amazonaws.com/pod-eni": "106"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "893690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "16436982Mi",
+        "pods": "394",
+        "vpc.amazonaws.com/efa": "2",
+        "vpc.amazonaws.com/pod-eni": "106"
+      }
     }
   ]
 }

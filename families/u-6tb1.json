@@ -20,7 +20,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "u-6tb1.56xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "223370m",
+        "ephemeral-storage": "17Gi",
+        "memory": "6157164Mi",
+        "pods": "737"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "630m",
@@ -44,7 +49,12 @@
         "memory": "6165626Mi",
         "pods": "737"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "223370m",
+        "ephemeral-storage": "17Gi",
+        "memory": "6157164Mi",
+        "pods": "737"
+      }
     },
     {
       "Name": "u-6tb1.112xlarge",
@@ -65,7 +75,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "u-6tb1.112xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "446810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "6157164Mi",
+        "pods": "737"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "1190m",
@@ -89,7 +104,12 @@
         "memory": "6165626Mi",
         "pods": "737"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "446810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "6157164Mi",
+        "pods": "737"
+      }
     }
   ]
 }

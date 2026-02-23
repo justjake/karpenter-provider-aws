@@ -25,7 +25,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "gr6.4xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "125521Mi",
+        "nvidia.com/gpu": "1",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "54"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "110m",
@@ -51,7 +58,14 @@
         "pods": "234",
         "vpc.amazonaws.com/pod-eni": "54"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "125521Mi",
+        "nvidia.com/gpu": "1",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "54"
+      }
     },
     {
       "Name": "gr6.8xlarge",
@@ -77,7 +91,15 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "gr6.8xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "253972Mi",
+        "nvidia.com/gpu": "1",
+        "pods": "234",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "84"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "150m",
@@ -104,7 +126,15 @@
         "vpc.amazonaws.com/efa": "1",
         "vpc.amazonaws.com/pod-eni": "84"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "253972Mi",
+        "nvidia.com/gpu": "1",
+        "pods": "234",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "84"
+      }
     }
   ]
 }

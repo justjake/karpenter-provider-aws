@@ -19,7 +19,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m4.large"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "7453Mi",
+        "pods": "20"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "70m",
@@ -43,7 +48,12 @@
         "memory": "8028Mi",
         "pods": "20"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "7453Mi",
+        "pods": "20"
+      }
     },
     {
       "Name": "m4.xlarge",
@@ -63,7 +73,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m4.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15063Mi",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -87,7 +102,12 @@
         "memory": "16056Mi",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15063Mi",
+        "pods": "58"
+      }
     },
     {
       "Name": "m4.2xlarge",
@@ -107,7 +127,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m4.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31119Mi",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -131,7 +156,12 @@
         "memory": "32112Mi",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31119Mi",
+        "pods": "58"
+      }
     },
     {
       "Name": "m4.4xlarge",
@@ -151,7 +181,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m4.4xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "61296Mi",
+        "pods": "234"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "110m",
@@ -175,7 +210,12 @@
         "memory": "64225Mi",
         "pods": "234"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "61296Mi",
+        "pods": "234"
+      }
     },
     {
       "Name": "m4.10xlarge",
@@ -196,7 +236,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m4.10xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "39830m",
+        "ephemeral-storage": "17Gi",
+        "memory": "157634Mi",
+        "pods": "234"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "170m",
@@ -220,7 +265,12 @@
         "memory": "160563Mi",
         "pods": "234"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "39830m",
+        "ephemeral-storage": "17Gi",
+        "memory": "157634Mi",
+        "pods": "234"
+      }
     },
     {
       "Name": "m4.16xlarge",
@@ -241,7 +291,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m4.16xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "253972Mi",
+        "pods": "234"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "230m",
@@ -265,7 +320,12 @@
         "memory": "256901Mi",
         "pods": "234"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "253972Mi",
+        "pods": "234"
+      }
     }
   ]
 }

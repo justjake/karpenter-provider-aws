@@ -21,7 +21,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.large"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15382Mi",
+        "pods": "29",
+        "vpc.amazonaws.com/pod-eni": "19"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "70m",
@@ -46,7 +52,13 @@
         "pods": "29",
         "vpc.amazonaws.com/pod-eni": "19"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15382Mi",
+        "pods": "29",
+        "vpc.amazonaws.com/pod-eni": "19"
+      }
     },
     {
       "Name": "i7ie.xlarge",
@@ -68,7 +80,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31119Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "27"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -93,7 +111,13 @@
         "pods": "58",
         "vpc.amazonaws.com/pod-eni": "27"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31119Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "27"
+      }
     },
     {
       "Name": "i7ie.2xlarge",
@@ -115,7 +139,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "63232Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "27"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -140,7 +170,13 @@
         "pods": "58",
         "vpc.amazonaws.com/pod-eni": "27"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "63232Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "27"
+      }
     },
     {
       "Name": "i7ie.3xlarge",
@@ -162,7 +198,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.3xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "11900m",
+        "ephemeral-storage": "17Gi",
+        "memory": "95344Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "27"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "100m",
@@ -187,7 +229,13 @@
         "pods": "58",
         "vpc.amazonaws.com/pod-eni": "27"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "11900m",
+        "ephemeral-storage": "17Gi",
+        "memory": "95344Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "27"
+      }
     },
     {
       "Name": "i7ie.6xlarge",
@@ -209,7 +257,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.6xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "23870m",
+        "ephemeral-storage": "17Gi",
+        "memory": "189746Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "54"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "130m",
@@ -234,7 +288,13 @@
         "pods": "234",
         "vpc.amazonaws.com/pod-eni": "54"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "23870m",
+        "ephemeral-storage": "17Gi",
+        "memory": "189746Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "54"
+      }
     },
     {
       "Name": "i7ie.12xlarge",
@@ -256,7 +316,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.12xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "380662Mi",
+        "pods": "394",
+        "vpc.amazonaws.com/pod-eni": "54"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "190m",
@@ -281,7 +347,13 @@
         "pods": "394",
         "vpc.amazonaws.com/pod-eni": "54"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "380662Mi",
+        "pods": "394",
+        "vpc.amazonaws.com/pod-eni": "54"
+      }
     },
     {
       "Name": "i7ie.18xlarge",
@@ -303,7 +375,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.18xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "71750m",
+        "ephemeral-storage": "17Gi",
+        "memory": "569565Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "250m",
@@ -328,7 +406,13 @@
         "pods": "737",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "71750m",
+        "ephemeral-storage": "17Gi",
+        "memory": "569565Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     },
     {
       "Name": "i7ie.24xlarge",
@@ -350,7 +434,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.24xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "762241Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "310m",
@@ -375,7 +465,13 @@
         "pods": "737",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "762241Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     },
     {
       "Name": "i7ie.metal-24xl",
@@ -397,7 +493,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.metal-24xl"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "762241Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "310m",
@@ -422,7 +524,13 @@
         "pods": "737",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "762241Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     },
     {
       "Name": "i7ie.48xlarge",
@@ -444,7 +552,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.48xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "1532944Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "550m",
@@ -470,7 +585,14 @@
         "vpc.amazonaws.com/efa": "1",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "1532944Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     },
     {
       "Name": "i7ie.metal-48xl",
@@ -492,7 +614,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i7ie.metal-48xl"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "1532944Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "550m",
@@ -518,7 +647,14 @@
         "vpc.amazonaws.com/efa": "1",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "1532944Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     }
   ]
 }

@@ -267,6 +267,7 @@ below are the resources available with some assumptions and after the instance o
 			inst.OverheadTotal = nonZeroResources(it.Overhead.Total())
 			inst.CapacityWithoutSubtractingOverhead = nonZeroResources(it.Capacity)
 			minusOverhead := resources.Subtract(it.Capacity, it.Overhead.Total())
+			inst.CapacityMinusOverhead = nonZeroResources(minusOverhead)
 
 			fmt.Fprintln(f, "#### Labels")
 			fmt.Fprintln(f, " | Label | Value |")
@@ -297,6 +298,7 @@ below are the resources available with some assumptions and after the instance o
 					quantity = *resource.NewQuantity(i64, resource.BinarySI)
 				}
 				fmt.Fprintf(f, " |%s|%s|\n", resourceName, quantity.String())
+				inst.Resources[resourceName] = quantity.String()
 			}
 		}
 

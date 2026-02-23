@@ -19,7 +19,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "c8i-flex.large"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "3010Mi",
+        "pods": "59"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "70m",
@@ -43,7 +48,12 @@
         "memory": "4014Mi",
         "pods": "59"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "3010Mi",
+        "pods": "59"
+      }
     },
     {
       "Name": "c8i-flex.xlarge",
@@ -63,7 +73,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "c8i-flex.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "6375Mi",
+        "pods": "118"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -87,7 +102,12 @@
         "memory": "8028Mi",
         "pods": "118"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "6375Mi",
+        "pods": "118"
+      }
     },
     {
       "Name": "c8i-flex.2xlarge",
@@ -107,7 +127,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "c8i-flex.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "14403Mi",
+        "pods": "118"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -131,7 +156,12 @@
         "memory": "16056Mi",
         "pods": "118"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "14403Mi",
+        "pods": "118"
+      }
     },
     {
       "Name": "c8i-flex.4xlarge",
@@ -151,7 +181,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "c8i-flex.4xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "27423Mi",
+        "pods": "394"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "110m",
@@ -175,7 +210,12 @@
         "memory": "32112Mi",
         "pods": "394"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "27423Mi",
+        "pods": "394"
+      }
     },
     {
       "Name": "c8i-flex.8xlarge",
@@ -195,7 +235,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "c8i-flex.8xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "58458Mi",
+        "pods": "492"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "150m",
@@ -219,7 +264,12 @@
         "memory": "64225Mi",
         "pods": "492"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "58458Mi",
+        "pods": "492"
+      }
     },
     {
       "Name": "c8i-flex.12xlarge",
@@ -239,7 +289,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "c8i-flex.12xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "89492Mi",
+        "pods": "590"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "190m",
@@ -263,7 +318,12 @@
         "memory": "96337Mi",
         "pods": "590"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "89492Mi",
+        "pods": "590"
+      }
     },
     {
       "Name": "c8i-flex.16xlarge",
@@ -283,7 +343,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "c8i-flex.16xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "116985Mi",
+        "pods": "1010"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "230m",
@@ -307,7 +372,12 @@
         "memory": "128450Mi",
         "pods": "1010"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "116985Mi",
+        "pods": "1010"
+      }
     }
   ]
 }

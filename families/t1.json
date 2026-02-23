@@ -18,7 +18,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "t1.micro"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "940m",
+        "ephemeral-storage": "17Gi",
+        "memory": "215Mi",
+        "pods": "4"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "60m",
@@ -42,7 +47,12 @@
         "memory": "614Mi",
         "pods": "4"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "940m",
+        "ephemeral-storage": "17Gi",
+        "memory": "215Mi",
+        "pods": "4"
+      }
     }
   ]
 }

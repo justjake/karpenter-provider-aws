@@ -18,7 +18,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i2.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "29614Mi",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -42,7 +47,12 @@
         "memory": "30607Mi",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "29614Mi",
+        "pods": "58"
+      }
     },
     {
       "Name": "i2.2xlarge",
@@ -61,7 +71,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i2.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "60221Mi",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -85,7 +100,12 @@
         "memory": "61214Mi",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "60221Mi",
+        "pods": "58"
+      }
     },
     {
       "Name": "i2.4xlarge",
@@ -104,7 +124,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i2.4xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "119500Mi",
+        "pods": "234"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "110m",
@@ -128,7 +153,12 @@
         "memory": "122429Mi",
         "pods": "234"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "119500Mi",
+        "pods": "234"
+      }
     },
     {
       "Name": "i2.8xlarge",
@@ -148,7 +178,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "i2.8xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "241929Mi",
+        "pods": "234"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "150m",
@@ -172,7 +207,12 @@
         "memory": "244858Mi",
         "pods": "234"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "241929Mi",
+        "pods": "234"
+      }
     }
   ]
 }

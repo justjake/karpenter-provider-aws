@@ -18,7 +18,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m2.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "16166Mi",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "70m",
@@ -42,7 +47,12 @@
         "memory": "17159Mi",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "16166Mi",
+        "pods": "58"
+      }
     },
     {
       "Name": "m2.2xlarge",
@@ -61,7 +71,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m2.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "32666Mi",
+        "pods": "118"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -85,7 +100,12 @@
         "memory": "34319Mi",
         "pods": "118"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "32666Mi",
+        "pods": "118"
+      }
     },
     {
       "Name": "m2.4xlarge",
@@ -104,7 +124,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m2.4xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "65711Mi",
+        "pods": "234"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -128,7 +153,12 @@
         "memory": "68640Mi",
         "pods": "234"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "65711Mi",
+        "pods": "234"
+      }
     }
   ]
 }

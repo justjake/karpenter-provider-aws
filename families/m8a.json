@@ -19,7 +19,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.medium"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "940m",
+        "ephemeral-storage": "17Gi",
+        "memory": "3571Mi",
+        "pods": "8"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "60m",
@@ -43,7 +48,12 @@
         "memory": "4014Mi",
         "pods": "8"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "940m",
+        "ephemeral-storage": "17Gi",
+        "memory": "3571Mi",
+        "pods": "8"
+      }
     },
     {
       "Name": "m8a.large",
@@ -63,7 +73,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.large"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "7024Mi",
+        "pods": "59"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "70m",
@@ -87,7 +102,12 @@
         "memory": "8028Mi",
         "pods": "59"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "7024Mi",
+        "pods": "59"
+      }
     },
     {
       "Name": "m8a.xlarge",
@@ -107,7 +127,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "14843Mi",
+        "pods": "78"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -131,7 +156,12 @@
         "memory": "16056Mi",
         "pods": "78"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "14843Mi",
+        "pods": "78"
+      }
     },
     {
       "Name": "m8a.2xlarge",
@@ -151,7 +181,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "30019Mi",
+        "pods": "158"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -175,7 +210,12 @@
         "memory": "32112Mi",
         "pods": "158"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "30019Mi",
+        "pods": "158"
+      }
     },
     {
       "Name": "m8a.4xlarge",
@@ -195,7 +235,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.4xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "59Gi",
+        "pods": "314"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "110m",
@@ -219,7 +264,12 @@
         "memory": "64225Mi",
         "pods": "314"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "59Gi",
+        "pods": "314"
+      }
     },
     {
       "Name": "m8a.8xlarge",
@@ -239,7 +289,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.8xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "123783Mi",
+        "pods": "392"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "150m",
@@ -263,7 +318,12 @@
         "memory": "128450Mi",
         "pods": "392"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "123783Mi",
+        "pods": "392"
+      }
     },
     {
       "Name": "m8a.12xlarge",
@@ -283,7 +343,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.12xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "183982Mi",
+        "pods": "758"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "190m",
@@ -307,7 +372,12 @@
         "memory": "192675Mi",
         "pods": "758"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "183982Mi",
+        "pods": "758"
+      }
     },
     {
       "Name": "m8a.16xlarge",
@@ -327,7 +397,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.16xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "245436Mi",
+        "pods": "1010"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "230m",
@@ -351,7 +426,12 @@
         "memory": "256901Mi",
         "pods": "1010"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "245436Mi",
+        "pods": "1010"
+      }
     },
     {
       "Name": "m8a.24xlarge",
@@ -371,7 +451,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.24xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "373886Mi",
+        "pods": "1010"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "310m",
@@ -395,7 +480,12 @@
         "memory": "385351Mi",
         "pods": "1010"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "373886Mi",
+        "pods": "1010"
+      }
     },
     {
       "Name": "m8a.metal-24xl",
@@ -415,7 +505,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.metal-24xl"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "373886Mi",
+        "pods": "1010"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "310m",
@@ -439,7 +534,12 @@
         "memory": "385351Mi",
         "pods": "1010"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "373886Mi",
+        "pods": "1010"
+      }
     },
     {
       "Name": "m8a.48xlarge",
@@ -459,7 +559,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.48xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "753694Mi",
+        "pods": "1514",
+        "vpc.amazonaws.com/efa": "1"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "550m",
@@ -484,7 +590,13 @@
         "pods": "1514",
         "vpc.amazonaws.com/efa": "1"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "753694Mi",
+        "pods": "1514",
+        "vpc.amazonaws.com/efa": "1"
+      }
     },
     {
       "Name": "m8a.metal-48xl",
@@ -504,7 +616,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m8a.metal-48xl"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "753694Mi",
+        "pods": "1514",
+        "vpc.amazonaws.com/efa": "1"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "550m",
@@ -529,7 +647,13 @@
         "pods": "1514",
         "vpc.amazonaws.com/efa": "1"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "753694Mi",
+        "pods": "1514",
+        "vpc.amazonaws.com/efa": "1"
+      }
     }
   ]
 }

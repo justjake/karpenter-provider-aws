@@ -20,7 +20,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "f1.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "121436Mi",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -44,7 +49,12 @@
         "memory": "122429Mi",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "121436Mi",
+        "pods": "58"
+      }
     },
     {
       "Name": "f1.4xlarge",
@@ -65,7 +75,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "f1.4xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "241929Mi",
+        "pods": "234"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "110m",
@@ -89,7 +104,12 @@
         "memory": "244858Mi",
         "pods": "234"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "241929Mi",
+        "pods": "234"
+      }
     },
     {
       "Name": "f1.16xlarge",
@@ -111,7 +131,12 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "f1.16xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "974746Mi",
+        "pods": "394"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "230m",
@@ -135,7 +160,12 @@
         "memory": "979435Mi",
         "pods": "394"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "974746Mi",
+        "pods": "394"
+      }
     }
   ]
 }

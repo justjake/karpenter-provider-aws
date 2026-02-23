@@ -25,7 +25,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "g4ad.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "amd.com/gpu": "1",
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15613Mi",
+        "pods": "8",
+        "vpc.amazonaws.com/pod-eni": "12"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -51,7 +58,14 @@
         "pods": "8",
         "vpc.amazonaws.com/pod-eni": "12"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "amd.com/gpu": "1",
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15613Mi",
+        "pods": "8",
+        "vpc.amazonaws.com/pod-eni": "12"
+      }
     },
     {
       "Name": "g4ad.2xlarge",
@@ -77,7 +91,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "g4ad.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "amd.com/gpu": "1",
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31669Mi",
+        "pods": "8",
+        "vpc.amazonaws.com/pod-eni": "12"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -103,7 +124,14 @@
         "pods": "8",
         "vpc.amazonaws.com/pod-eni": "12"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "amd.com/gpu": "1",
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31669Mi",
+        "pods": "8",
+        "vpc.amazonaws.com/pod-eni": "12"
+      }
     },
     {
       "Name": "g4ad.4xlarge",
@@ -129,7 +157,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "g4ad.4xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "amd.com/gpu": "1",
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "63551Mi",
+        "pods": "29",
+        "vpc.amazonaws.com/pod-eni": "11"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "110m",
@@ -155,7 +190,14 @@
         "pods": "29",
         "vpc.amazonaws.com/pod-eni": "11"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "amd.com/gpu": "1",
+        "cpu": "15890m",
+        "ephemeral-storage": "17Gi",
+        "memory": "63551Mi",
+        "pods": "29",
+        "vpc.amazonaws.com/pod-eni": "11"
+      }
     },
     {
       "Name": "g4ad.8xlarge",
@@ -181,7 +223,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "g4ad.8xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "amd.com/gpu": "2",
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "127457Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "10"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "150m",
@@ -207,7 +256,14 @@
         "pods": "58",
         "vpc.amazonaws.com/pod-eni": "10"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "amd.com/gpu": "2",
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "127457Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "10"
+      }
     },
     {
       "Name": "g4ad.16xlarge",
@@ -233,7 +289,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "g4ad.16xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "amd.com/gpu": "4",
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "253972Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "6"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "230m",
@@ -259,7 +322,14 @@
         "pods": "234",
         "vpc.amazonaws.com/pod-eni": "6"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "amd.com/gpu": "4",
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "253972Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "6"
+      }
     }
   ]
 }

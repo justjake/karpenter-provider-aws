@@ -24,7 +24,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "p6-b300.48xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "4107884Mi",
+        "nvidia.com/gpu": "8",
+        "pods": "198",
+        "vpc.amazonaws.com/efa": "16"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "550m",
@@ -50,7 +57,14 @@
         "pods": "198",
         "vpc.amazonaws.com/efa": "16"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "191450m",
+        "ephemeral-storage": "17Gi",
+        "memory": "4107884Mi",
+        "nvidia.com/gpu": "8",
+        "pods": "198",
+        "vpc.amazonaws.com/efa": "16"
+      }
     }
   ]
 }

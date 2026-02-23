@@ -23,7 +23,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "p3.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "60221Mi",
+        "nvidia.com/gpu": "1",
+        "pods": "58"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -48,7 +54,13 @@
         "nvidia.com/gpu": "1",
         "pods": "58"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "60221Mi",
+        "nvidia.com/gpu": "1",
+        "pods": "58"
+      }
     },
     {
       "Name": "p3.8xlarge",
@@ -73,7 +85,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "p3.8xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "241929Mi",
+        "nvidia.com/gpu": "4",
+        "pods": "234"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "150m",
@@ -98,7 +116,13 @@
         "nvidia.com/gpu": "4",
         "pods": "234"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "31850m",
+        "ephemeral-storage": "17Gi",
+        "memory": "241929Mi",
+        "nvidia.com/gpu": "4",
+        "pods": "234"
+      }
     },
     {
       "Name": "p3.16xlarge",
@@ -123,7 +147,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "p3.16xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "486788Mi",
+        "nvidia.com/gpu": "8",
+        "pods": "234"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "230m",
@@ -148,7 +178,13 @@
         "nvidia.com/gpu": "8",
         "pods": "234"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "63770m",
+        "ephemeral-storage": "17Gi",
+        "memory": "486788Mi",
+        "nvidia.com/gpu": "8",
+        "pods": "234"
+      }
     }
   ]
 }

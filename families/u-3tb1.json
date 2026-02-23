@@ -20,7 +20,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "u-3tb1.56xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "223370m",
+        "ephemeral-storage": "17Gi",
+        "memory": "3079884Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "6"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "630m",
@@ -45,7 +51,13 @@
         "pods": "234",
         "vpc.amazonaws.com/pod-eni": "6"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "223370m",
+        "ephemeral-storage": "17Gi",
+        "memory": "3079884Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "6"
+      }
     }
   ]
 }

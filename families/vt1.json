@@ -20,7 +20,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "vt1.3xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "11900m",
+        "ephemeral-storage": "17Gi",
+        "memory": "23091Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "38"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "100m",
@@ -45,7 +51,13 @@
         "pods": "58",
         "vpc.amazonaws.com/pod-eni": "38"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "11900m",
+        "ephemeral-storage": "17Gi",
+        "memory": "23091Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "38"
+      }
     },
     {
       "Name": "vt1.6xlarge",
@@ -66,7 +78,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "vt1.6xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "23870m",
+        "ephemeral-storage": "17Gi",
+        "memory": "45239Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "54"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "130m",
@@ -91,7 +109,13 @@
         "pods": "234",
         "vpc.amazonaws.com/pod-eni": "54"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "23870m",
+        "ephemeral-storage": "17Gi",
+        "memory": "45239Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "54"
+      }
     },
     {
       "Name": "vt1.24xlarge",
@@ -112,7 +136,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "vt1.24xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "184213Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "310m",
@@ -138,7 +169,14 @@
         "vpc.amazonaws.com/efa": "1",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "95690m",
+        "ephemeral-storage": "17Gi",
+        "memory": "184213Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     }
   ]
 }

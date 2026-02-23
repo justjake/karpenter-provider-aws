@@ -20,7 +20,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m5zn.large"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "7354Mi",
+        "pods": "29",
+        "vpc.amazonaws.com/pod-eni": "13"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "70m",
@@ -45,7 +51,13 @@
         "pods": "29",
         "vpc.amazonaws.com/pod-eni": "13"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "1930m",
+        "ephemeral-storage": "17Gi",
+        "memory": "7354Mi",
+        "pods": "29",
+        "vpc.amazonaws.com/pod-eni": "13"
+      }
     },
     {
       "Name": "m5zn.xlarge",
@@ -66,7 +78,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m5zn.xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15063Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "29"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "80m",
@@ -91,7 +109,13 @@
         "pods": "58",
         "vpc.amazonaws.com/pod-eni": "29"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "3920m",
+        "ephemeral-storage": "17Gi",
+        "memory": "15063Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "29"
+      }
     },
     {
       "Name": "m5zn.2xlarge",
@@ -112,7 +136,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m5zn.2xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31119Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "62"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "90m",
@@ -137,7 +167,13 @@
         "pods": "58",
         "vpc.amazonaws.com/pod-eni": "62"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "7910m",
+        "ephemeral-storage": "17Gi",
+        "memory": "31119Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "62"
+      }
     },
     {
       "Name": "m5zn.3xlarge",
@@ -158,7 +194,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m5zn.3xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "11900m",
+        "ephemeral-storage": "17Gi",
+        "memory": "45239Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "92"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "100m",
@@ -183,7 +225,13 @@
         "pods": "234",
         "vpc.amazonaws.com/pod-eni": "92"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "11900m",
+        "ephemeral-storage": "17Gi",
+        "memory": "45239Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "92"
+      }
     },
     {
       "Name": "m5zn.6xlarge",
@@ -204,7 +252,13 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m5zn.6xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "23870m",
+        "ephemeral-storage": "17Gi",
+        "memory": "93408Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "114"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "130m",
@@ -229,7 +283,13 @@
         "pods": "234",
         "vpc.amazonaws.com/pod-eni": "114"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "23870m",
+        "ephemeral-storage": "17Gi",
+        "memory": "93408Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "114"
+      }
     },
     {
       "Name": "m5zn.12xlarge",
@@ -250,7 +310,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m5zn.12xlarge"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "184213Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "190m",
@@ -276,7 +343,14 @@
         "vpc.amazonaws.com/efa": "1",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "184213Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     },
     {
       "Name": "m5zn.metal",
@@ -297,7 +371,14 @@
         "kubernetes.io/os": "linux",
         "node.kubernetes.io/instance-type": "m5zn.metal"
       },
-      "Resources": {},
+      "Resources": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "184213Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
       "OverheadBySource": {
         "KubeReserved": {
           "cpu": "190m",
@@ -323,7 +404,14 @@
         "vpc.amazonaws.com/efa": "1",
         "vpc.amazonaws.com/pod-eni": "107"
       },
-      "CapacityMinusOverhead": null
+      "CapacityMinusOverhead": {
+        "cpu": "47810m",
+        "ephemeral-storage": "17Gi",
+        "memory": "184213Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      }
     }
   ]
 }
