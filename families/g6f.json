@@ -1,0 +1,201 @@
+{
+  "Family": "g6f",
+  "InstanceTypes": [
+    {
+      "Name": "g6f.large",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "g",
+        "karpenter.k8s.aws/instance-cpu": "2",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3400",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "5000",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "g6f",
+        "karpenter.k8s.aws/instance-generation": "6",
+        "karpenter.k8s.aws/instance-gpu-count": "0",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "nvidia",
+        "karpenter.k8s.aws/instance-gpu-memory": "2861",
+        "karpenter.k8s.aws/instance-gpu-name": "l4",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "100",
+        "karpenter.k8s.aws/instance-memory": "8192",
+        "karpenter.k8s.aws/instance-size": "large",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "g6f.large"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "70m",
+          "ephemeral-storage": "1Gi",
+          "memory": "475Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "70m",
+        "ephemeral-storage": "3Gi",
+        "memory": "575Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "2",
+        "ephemeral-storage": "20Gi",
+        "memory": "8028Mi",
+        "pods": "20"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "g6f.xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "g",
+        "karpenter.k8s.aws/instance-cpu": "4",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3400",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "5000",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "g6f",
+        "karpenter.k8s.aws/instance-generation": "6",
+        "karpenter.k8s.aws/instance-gpu-count": "0",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "nvidia",
+        "karpenter.k8s.aws/instance-gpu-memory": "2861",
+        "karpenter.k8s.aws/instance-gpu-name": "l4",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "100",
+        "karpenter.k8s.aws/instance-memory": "16384",
+        "karpenter.k8s.aws/instance-size": "xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "g6f.xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "80m",
+          "ephemeral-storage": "1Gi",
+          "memory": "893Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "80m",
+        "ephemeral-storage": "3Gi",
+        "memory": "993Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "4",
+        "ephemeral-storage": "20Gi",
+        "memory": "16056Mi",
+        "pods": "58"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "g6f.2xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "g",
+        "karpenter.k8s.aws/instance-cpu": "8",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3400",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "5000",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "g6f",
+        "karpenter.k8s.aws/instance-generation": "6",
+        "karpenter.k8s.aws/instance-gpu-count": "0",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "nvidia",
+        "karpenter.k8s.aws/instance-gpu-memory": "5722",
+        "karpenter.k8s.aws/instance-gpu-name": "l4",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "200",
+        "karpenter.k8s.aws/instance-memory": "32768",
+        "karpenter.k8s.aws/instance-size": "2xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "g6f.2xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "90m",
+          "ephemeral-storage": "1Gi",
+          "memory": "893Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "90m",
+        "ephemeral-storage": "3Gi",
+        "memory": "993Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "8",
+        "ephemeral-storage": "20Gi",
+        "memory": "32112Mi",
+        "pods": "58"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "g6f.4xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "g",
+        "karpenter.k8s.aws/instance-cpu": "16",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3400",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "6000",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "g6f",
+        "karpenter.k8s.aws/instance-generation": "6",
+        "karpenter.k8s.aws/instance-gpu-count": "0",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "nvidia",
+        "karpenter.k8s.aws/instance-gpu-memory": "11444",
+        "karpenter.k8s.aws/instance-gpu-name": "l4",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "450",
+        "karpenter.k8s.aws/instance-memory": "65536",
+        "karpenter.k8s.aws/instance-size": "4xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "g6f.4xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "110m",
+          "ephemeral-storage": "1Gi",
+          "memory": "2829Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "110m",
+        "ephemeral-storage": "3Gi",
+        "memory": "2929Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "16",
+        "ephemeral-storage": "20Gi",
+        "memory": "64225Mi",
+        "pods": "234"
+      },
+      "CapacityMinusOverhead": null
+    }
+  ]
+}

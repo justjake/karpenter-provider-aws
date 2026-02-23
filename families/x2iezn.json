@@ -1,0 +1,283 @@
+{
+  "Family": "x2iezn",
+  "InstanceTypes": [
+    {
+      "Name": "x2iezn.2xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "x",
+        "karpenter.k8s.aws/instance-cpu": "8",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "4500",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "3170",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "x2iezn",
+        "karpenter.k8s.aws/instance-generation": "2",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-memory": "262144",
+        "karpenter.k8s.aws/instance-network-bandwidth": "12500",
+        "karpenter.k8s.aws/instance-size": "2xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "x2iezn.2xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "90m",
+          "ephemeral-storage": "1Gi",
+          "memory": "893Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "90m",
+        "ephemeral-storage": "3Gi",
+        "memory": "993Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "8",
+        "ephemeral-storage": "20Gi",
+        "memory": "256901Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "62"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "x2iezn.4xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "x",
+        "karpenter.k8s.aws/instance-cpu": "16",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "4500",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "4750",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "x2iezn",
+        "karpenter.k8s.aws/instance-generation": "2",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-memory": "524288",
+        "karpenter.k8s.aws/instance-network-bandwidth": "15000",
+        "karpenter.k8s.aws/instance-size": "4xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "x2iezn.4xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "110m",
+          "ephemeral-storage": "1Gi",
+          "memory": "2829Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "110m",
+        "ephemeral-storage": "3Gi",
+        "memory": "2929Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "16",
+        "ephemeral-storage": "20Gi",
+        "memory": "513802Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "114"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "x2iezn.6xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "x",
+        "karpenter.k8s.aws/instance-cpu": "24",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "4500",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "9500",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "x2iezn",
+        "karpenter.k8s.aws/instance-generation": "2",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-memory": "786432",
+        "karpenter.k8s.aws/instance-network-bandwidth": "50000",
+        "karpenter.k8s.aws/instance-size": "6xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "x2iezn.6xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "130m",
+          "ephemeral-storage": "1Gi",
+          "memory": "2829Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "130m",
+        "ephemeral-storage": "3Gi",
+        "memory": "2929Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "24",
+        "ephemeral-storage": "20Gi",
+        "memory": "770703Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "114"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "x2iezn.8xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "x",
+        "karpenter.k8s.aws/instance-cpu": "32",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "4500",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "12000",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "x2iezn",
+        "karpenter.k8s.aws/instance-generation": "2",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-memory": "1048576",
+        "karpenter.k8s.aws/instance-network-bandwidth": "75000",
+        "karpenter.k8s.aws/instance-size": "8xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "x2iezn.8xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "150m",
+          "ephemeral-storage": "1Gi",
+          "memory": "2829Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "150m",
+        "ephemeral-storage": "3Gi",
+        "memory": "2929Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "32",
+        "ephemeral-storage": "20Gi",
+        "memory": "1027604Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "114"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "x2iezn.12xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "x",
+        "karpenter.k8s.aws/instance-cpu": "48",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "4500",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "19000",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "x2iezn",
+        "karpenter.k8s.aws/instance-generation": "2",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-memory": "1572864",
+        "karpenter.k8s.aws/instance-network-bandwidth": "100000",
+        "karpenter.k8s.aws/instance-size": "12xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "x2iezn.12xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "190m",
+          "ephemeral-storage": "1Gi",
+          "memory": "8362Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "190m",
+        "ephemeral-storage": "3Gi",
+        "memory": "8462Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "48",
+        "ephemeral-storage": "20Gi",
+        "memory": "1541406Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "x2iezn.metal",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "x",
+        "karpenter.k8s.aws/instance-cpu": "48",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "intel",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "4500",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "19000",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "x2iezn",
+        "karpenter.k8s.aws/instance-generation": "2",
+        "karpenter.k8s.aws/instance-hypervisor": "",
+        "karpenter.k8s.aws/instance-memory": "1572864",
+        "karpenter.k8s.aws/instance-network-bandwidth": "100000",
+        "karpenter.k8s.aws/instance-size": "metal",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "x2iezn.metal"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "190m",
+          "ephemeral-storage": "1Gi",
+          "memory": "8362Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "190m",
+        "ephemeral-storage": "3Gi",
+        "memory": "8462Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "48",
+        "ephemeral-storage": "20Gi",
+        "memory": "1541406Mi",
+        "pods": "737",
+        "vpc.amazonaws.com/efa": "1",
+        "vpc.amazonaws.com/pod-eni": "107"
+      },
+      "CapacityMinusOverhead": null
+    }
+  ]
+}

@@ -16,6 +16,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
@@ -80,6 +81,21 @@ func (f *FakeFieldIndexer) IndexField(_ context.Context, _ client.Object, _ stri
 	return nil
 }
 
+type FamilyInfo struct {
+	Family        string
+	InstanceTypes []*InstanceType
+}
+
+type InstanceType struct {
+	Name                               string
+	Labels                             map[string]any
+	Resources                          map[string]any
+	OverheadBySource                   *cloudprovider.InstanceTypeOverhead
+	OverheadTotal                      corev1.ResourceList
+	CapacityWithoutSubtractingOverhead corev1.ResourceList
+	CapacityMinusOverhead              corev1.ResourceList
+}
+
 func main() {
 	flag.Parse()
 	if flag.NArg() != 1 {
@@ -93,8 +109,9 @@ func main() {
 		FeatureGates: coretest.FeatureGates{ReservedCapacity: lo.ToPtr(false)},
 	}))
 	ctx = options.ToContext(ctx, test.Options(test.OptionsFields{
-		ClusterName:     lo.ToPtr("docs-gen"),
-		ClusterEndpoint: lo.ToPtr("https://docs-gen.aws"),
+		ClusterName:             lo.ToPtr("docs-gen"),
+		ClusterEndpoint:         lo.ToPtr("https://docs-gen.aws"),
+		VMMemoryOverheadPercent: lo.ToPtr(0.02), // notion sets this
 	}))
 
 	outputFileName := flag.Arg(0)
@@ -126,7 +143,7 @@ below are the resources available with some assumptions and after the instance o
 	resourceNameMap := sets.New[string]()
 
 	// Iterate through regions and take the union of instance types we discover across both
-	for _, region := range []string{"us-east-1", "us-east-2", "us-west-2"} {
+	for _, region := range []string{"us-west-2"} {
 		cfg := lo.Must(config.LoadDefaultConfig(ctx, config.WithRegion(region)))
 		ec2api := ec2.NewFromConfig(cfg)
 		subnetProvider := subnet.NewDefaultProvider(ec2api, cache.New(awscache.DefaultTTL, awscache.DefaultCleanupInterval), cache.New(awscache.AvailableIPAddressTTL, awscache.DefaultCleanupInterval), cache.New(awscache.AssociatePublicIPAddressTTL, awscache.DefaultCleanupInterval))
@@ -215,6 +232,11 @@ below are the resources available with some assumptions and after the instance o
 	for _, familyName := range familyNames {
 		fmt.Fprintf(f, "## %s Family\n", familyName)
 
+		fam := FamilyInfo{
+			Family:        familyName,
+			InstanceTypes: make([]*InstanceType, 0, 5),
+		}
+
 		instanceTypes := lo.MapToSlice(families[familyName], func(_ string, it *cloudprovider.InstanceType) *cloudprovider.InstanceType { return it })
 		// sort the instance types within the family, we sort by CPU and memory which should be a pretty good ordering
 		sort.Slice(instanceTypes, func(a, b int) bool {
@@ -232,8 +254,20 @@ below are the resources available with some assumptions and after the instance o
 		})
 
 		for _, it := range instanceTypes {
+			inst := &InstanceType{
+				Name:      it.Name,
+				Labels:    make(map[string]any),
+				Resources: make(map[string]any),
+			}
+			fam.InstanceTypes = append(fam.InstanceTypes, inst)
+
 			fmt.Fprintf(f, "### `%s`\n", it.Name)
+
+			inst.OverheadBySource = it.Overhead
+			inst.OverheadTotal = nonZeroResources(it.Overhead.Total())
+			inst.CapacityWithoutSubtractingOverhead = nonZeroResources(it.Capacity)
 			minusOverhead := resources.Subtract(it.Capacity, it.Overhead.Total())
+
 			fmt.Fprintln(f, "#### Labels")
 			fmt.Fprintln(f, " | Label | Value |")
 			fmt.Fprintln(f, " |--|--|")
@@ -246,6 +280,7 @@ below are the resources available with some assumptions and after the instance o
 					continue
 				}
 				if len(req.Values()) == 1 {
+					inst.Labels[label] = req.Values()[0]
 					fmt.Fprintf(f, " |%s|%s|\n", label, req.Values()[0])
 				}
 			}
@@ -264,5 +299,23 @@ below are the resources available with some assumptions and after the instance o
 				fmt.Fprintf(f, " |%s|%s|\n", resourceName, quantity.String())
 			}
 		}
+
+		serialized, err := json.MarshalIndent(fam, "", "  ")
+		if err != nil {
+			log.Fatalf("marshalling family %s, %s", familyName, err)
+		}
+		outfile := fmt.Sprintf("families/%s.json", familyName)
+		os.WriteFile(outfile, serialized, 0644)
+		log.Println("wrote", outfile)
 	}
+}
+
+func nonZeroResources(resources corev1.ResourceList) corev1.ResourceList {
+	res := corev1.ResourceList{}
+	for resourceName, quantity := range resources {
+		if !quantity.IsZero() {
+			res[resourceName] = quantity
+		}
+	}
+	return res
 }

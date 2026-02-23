@@ -1,0 +1,58 @@
+{
+  "Family": "p5e",
+  "InstanceTypes": [
+    {
+      "Name": "p5e.48xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "p",
+        "karpenter.k8s.aws/instance-cpu": "192",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3600",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "80000",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "p5e",
+        "karpenter.k8s.aws/instance-generation": "5",
+        "karpenter.k8s.aws/instance-gpu-count": "8",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "nvidia",
+        "karpenter.k8s.aws/instance-gpu-memory": "144384",
+        "karpenter.k8s.aws/instance-gpu-name": "h200",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "30400",
+        "karpenter.k8s.aws/instance-memory": "2097152",
+        "karpenter.k8s.aws/instance-network-bandwidth": "3200000",
+        "karpenter.k8s.aws/instance-size": "48xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "p5e.48xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "550m",
+          "ephemeral-storage": "1Gi",
+          "memory": "1355Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "550m",
+        "ephemeral-storage": "3Gi",
+        "memory": "1455Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "cpu": "192",
+        "ephemeral-storage": "20Gi",
+        "memory": "2055208Mi",
+        "nvidia.com/gpu": "8",
+        "pods": "100",
+        "vpc.amazonaws.com/efa": "32",
+        "vpc.amazonaws.com/pod-eni": "120"
+      },
+      "CapacityMinusOverhead": null
+    }
+  ]
+}

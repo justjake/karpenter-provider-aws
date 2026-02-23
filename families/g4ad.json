@@ -1,0 +1,265 @@
+{
+  "Family": "g4ad",
+  "InstanceTypes": [
+    {
+      "Name": "g4ad.xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "g",
+        "karpenter.k8s.aws/instance-cpu": "4",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3000",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "3170",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "g4ad",
+        "karpenter.k8s.aws/instance-generation": "4",
+        "karpenter.k8s.aws/instance-gpu-count": "1",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-gpu-memory": "8192",
+        "karpenter.k8s.aws/instance-gpu-name": "radeon-pro-v520",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "150",
+        "karpenter.k8s.aws/instance-memory": "16384",
+        "karpenter.k8s.aws/instance-network-bandwidth": "2000",
+        "karpenter.k8s.aws/instance-size": "xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "g4ad.xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "80m",
+          "ephemeral-storage": "1Gi",
+          "memory": "343Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "80m",
+        "ephemeral-storage": "3Gi",
+        "memory": "443Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "amd.com/gpu": "1",
+        "cpu": "4",
+        "ephemeral-storage": "20Gi",
+        "memory": "16056Mi",
+        "pods": "8",
+        "vpc.amazonaws.com/pod-eni": "12"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "g4ad.2xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "g",
+        "karpenter.k8s.aws/instance-cpu": "8",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3000",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "3170",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "g4ad",
+        "karpenter.k8s.aws/instance-generation": "4",
+        "karpenter.k8s.aws/instance-gpu-count": "1",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-gpu-memory": "8192",
+        "karpenter.k8s.aws/instance-gpu-name": "radeon-pro-v520",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "300",
+        "karpenter.k8s.aws/instance-memory": "32768",
+        "karpenter.k8s.aws/instance-network-bandwidth": "4167",
+        "karpenter.k8s.aws/instance-size": "2xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "g4ad.2xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "90m",
+          "ephemeral-storage": "1Gi",
+          "memory": "343Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "90m",
+        "ephemeral-storage": "3Gi",
+        "memory": "443Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "amd.com/gpu": "1",
+        "cpu": "8",
+        "ephemeral-storage": "20Gi",
+        "memory": "32112Mi",
+        "pods": "8",
+        "vpc.amazonaws.com/pod-eni": "12"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "g4ad.4xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "g",
+        "karpenter.k8s.aws/instance-cpu": "16",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3000",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "3170",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "g4ad",
+        "karpenter.k8s.aws/instance-generation": "4",
+        "karpenter.k8s.aws/instance-gpu-count": "1",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-gpu-memory": "8192",
+        "karpenter.k8s.aws/instance-gpu-name": "radeon-pro-v520",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "600",
+        "karpenter.k8s.aws/instance-memory": "65536",
+        "karpenter.k8s.aws/instance-network-bandwidth": "8333",
+        "karpenter.k8s.aws/instance-size": "4xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "g4ad.4xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "110m",
+          "ephemeral-storage": "1Gi",
+          "memory": "574Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "110m",
+        "ephemeral-storage": "3Gi",
+        "memory": "674Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "amd.com/gpu": "1",
+        "cpu": "16",
+        "ephemeral-storage": "20Gi",
+        "memory": "64225Mi",
+        "pods": "29",
+        "vpc.amazonaws.com/pod-eni": "11"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "g4ad.8xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "g",
+        "karpenter.k8s.aws/instance-cpu": "32",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3000",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "3170",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "g4ad",
+        "karpenter.k8s.aws/instance-generation": "4",
+        "karpenter.k8s.aws/instance-gpu-count": "2",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-gpu-memory": "8192",
+        "karpenter.k8s.aws/instance-gpu-name": "radeon-pro-v520",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "1200",
+        "karpenter.k8s.aws/instance-memory": "131072",
+        "karpenter.k8s.aws/instance-network-bandwidth": "15000",
+        "karpenter.k8s.aws/instance-size": "8xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "g4ad.8xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "150m",
+          "ephemeral-storage": "1Gi",
+          "memory": "893Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "150m",
+        "ephemeral-storage": "3Gi",
+        "memory": "993Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "amd.com/gpu": "2",
+        "cpu": "32",
+        "ephemeral-storage": "20Gi",
+        "memory": "128450Mi",
+        "pods": "58",
+        "vpc.amazonaws.com/pod-eni": "10"
+      },
+      "CapacityMinusOverhead": null
+    },
+    {
+      "Name": "g4ad.16xlarge",
+      "Labels": {
+        "karpenter.k8s.aws/instance-category": "g",
+        "karpenter.k8s.aws/instance-cpu": "64",
+        "karpenter.k8s.aws/instance-cpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-cpu-sustained-clock-speed-mhz": "3000",
+        "karpenter.k8s.aws/instance-ebs-bandwidth": "6300",
+        "karpenter.k8s.aws/instance-encryption-in-transit-supported": "true",
+        "karpenter.k8s.aws/instance-family": "g4ad",
+        "karpenter.k8s.aws/instance-generation": "4",
+        "karpenter.k8s.aws/instance-gpu-count": "4",
+        "karpenter.k8s.aws/instance-gpu-manufacturer": "amd",
+        "karpenter.k8s.aws/instance-gpu-memory": "8192",
+        "karpenter.k8s.aws/instance-gpu-name": "radeon-pro-v520",
+        "karpenter.k8s.aws/instance-hypervisor": "nitro",
+        "karpenter.k8s.aws/instance-local-nvme": "2400",
+        "karpenter.k8s.aws/instance-memory": "262144",
+        "karpenter.k8s.aws/instance-network-bandwidth": "25000",
+        "karpenter.k8s.aws/instance-size": "16xlarge",
+        "kubernetes.io/arch": "amd64",
+        "kubernetes.io/os": "linux",
+        "node.kubernetes.io/instance-type": "g4ad.16xlarge"
+      },
+      "Resources": {},
+      "OverheadBySource": {
+        "KubeReserved": {
+          "cpu": "230m",
+          "ephemeral-storage": "1Gi",
+          "memory": "2829Mi"
+        },
+        "SystemReserved": {},
+        "EvictionThreshold": {
+          "ephemeral-storage": "2.147483648e+09",
+          "memory": "100Mi"
+        }
+      },
+      "OverheadTotal": {
+        "cpu": "230m",
+        "ephemeral-storage": "3Gi",
+        "memory": "2929Mi"
+      },
+      "CapacityWithoutSubtractingOverhead": {
+        "amd.com/gpu": "4",
+        "cpu": "64",
+        "ephemeral-storage": "20Gi",
+        "memory": "256901Mi",
+        "pods": "234",
+        "vpc.amazonaws.com/pod-eni": "6"
+      },
+      "CapacityMinusOverhead": null
+    }
+  ]
+}
